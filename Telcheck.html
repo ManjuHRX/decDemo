@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    input {
+      height: 30px;
+      margin: 3px;
+    }
+    select {
+      height: 30px;
+      margin: 3px;
+    }
+    form {
+      border: 4px solid pink;
+      padding: 10px;
+      width: 50%;
+      background-color: bisque;
+    }
+  </style>
+  <body>
+    <form oninput="outputVal.value= priceRange.value">
+      <input type="tel" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{10}"><br>
+      <input type="tel" name="Sigapore phoneNumber" placeholder="Enter Singapore phone number" pattern="[1-9]{8}"><br>
+      <input type="number" name="salary" placeholder="Salary" min="5000" max="10000"><br>
+      <input type="search" name="Search" placeholder="search..."><br>
+      <output name="outputVal"></output><br>
+      <input type="range" name="priceRange" min="0" max="100"><br>
+      <input list="playList">
+      <datalist id ="playList">
+        <option value="Cricket"></option>
+        <option value="BasketBall"></option>
+        <option value ="Badminton"></option>
+        <option value ="Badminton"></option>
+      </datalist><br>
+      <progress value="70" max="100"><br>
+      <input type="submit" value="Enter">
+
+    </form>
+  </body>
+</html>
